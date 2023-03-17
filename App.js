@@ -1,12 +1,13 @@
-import React from "react";
+import React from 'react';
+
 import {
   useFonts,
   Inter_900Black,
   Inter_400Regular,
   Inter_600SemiBold,
   Inter_500Medium,
-} from "@expo-google-fonts/inter";
-
+} from '@expo-google-fonts/inter';
+import { View } from 'react-native';
 const App = () => {
   let [fontsLoaded] = useFonts({
     Inter_900Black,
@@ -19,7 +20,11 @@ const App = () => {
     return null;
   }
 
-  return <></>;
+  return (
+    <>
+      <View></View>
+    </>
+  );
 };
 
 export default App;
